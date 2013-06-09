@@ -1,0 +1,66 @@
+DESCRIPTION
+
+This is a program developed for my friends who own a furniture manufacturing
+company. The program is designed to manage a database of customer orders.
+
+It was my first experiece with java and I worked in my spare time and in a
+hurry, so I think some things are not very well designed.
+
+
+COMPILATION
+
+1. Install Java Development Kit;
+
+2. Download MySQL connector (http://dev.mysql.com/downloads/connector/j/);
+
+3. Add the VectorApp home directory and the path to the MySQL connector
+   to CLASSPATH environment variable (e.g.
+   d:\vector;d:\vector\mysql-driver\mysql-connector-java-5.1.12-bin.jar).
+
+
+3. Change the current directory to the directory which contains VectorApp.java
+
+4. Run javac VectorApp.java
+
+
+DEPLOYMENT OF DATABASE
+
+1. Run the mysql client;
+
+2. Create a database (e.g. vector):
+
+   CREATE DATABASE vector;
+
+3. Select the created database:
+   
+   USE vector;
+
+4. Import the dump:
+
+   SOURCE d:/vector/sql/etalon.sql;
+
+
+CONFIGURATION:
+
+Fix tao.conf:
+
+   db_name=database name (e.g. vector)
+   tempdir=path to an existing temporary directory (e.g. d\:/vector/temp)
+   db_host=db host name or IP address (e.g. localhost)
+
+
+FIRST RUN:
+
+1. Change the current directory to the directory which contains VectorApp.class
+   and execute:
+
+   javaw VectorApp
+
+2. Login with your MySQL root credentials;
+
+3. Create an user with the Administrator role;
+
+
+AUTHOR:
+
+   Alexey Komarov <alexey@komarov.org.ru>

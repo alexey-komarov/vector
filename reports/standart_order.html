@@ -1,0 +1,146 @@
+<html>
+<body>
+
+	<p>
+		Дата и время вывоза заказа <i><b>желаемое: </b><u>%DATE_SHIPING_WANTING%</u> <b>обязательное:</b> <u>%DATE_SHIPING_MAX%</u></i><br>
+		Адреc, телефон, контактное лицо заказчика: <u>%CONTACT%</u>
+	</p><br>
+
+	<hr>
+
+	<h1><center>ЗАКАЗ (Согласно маршрутной карте заказа) №%NUMBER%</center></h1>
+	<h2><center>ЗАКАЗЧИК: %CLIENT%</center></h2>
+
+	<p>
+		Дата дачи в работу: <i>%DATE_BEGIN%</i> Дата готовности заказа: <i>%DATE_END%</i>
+	</p>
+
+	<hr>
+
+	<table width="100%" border="1" cellspacing="0" Cellpadding="0">
+		<tr>
+			<td width=30%>
+				МАТЕРИАЛ
+			</td>
+			<td>
+				%MATERIAL%&nbsp;
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				ЦВЕТ материала
+			</td>
+			<td>
+				%COLOR%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				КРОМКА
+			</td>
+			<td>
+				%EDGE%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				РУЧКИ
+			</td>
+			<td>
+				%HANDLE%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				СТЕКЛО
+			</td>
+			<td>
+				%GLASS%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				ДОПОЛНИТЕЛЬНАЯ ФУРНИТУРА
+			</td>
+			<td>
+				%FURNITURE%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				ДОПОЛНИТЕЛЬНЫЕ СВЕДЕНИЯ О ИЗДЕЛИЯХ
+			</td>
+			<td>
+				%MEBELINFO%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				ДОПОЛНИТЕЛЬНЫЕ СВЕДЕНИЯ О СБОРКЕ, УПАКОВКЕ
+			</td>
+			<td>
+				%PACKINFO%&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td>
+				ДОПОЛНИТЕЛЬНЫЕ СВЕДЕНИЯ О УСТАНОВКЕ НА МЕСТЕ КЛИЕНТА
+			</td>
+			<td>
+				%CLIENTINFO%&nbsp;
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				ОТВЕТСТВЕННЫЙ МЕНЕДЖЕР (фамилия)
+			</td>
+			<td>
+				%MANAGER%&nbsp;
+			</td>
+		</tr>
+		<tr> 
+			<td>
+				ЭТАЖНОСТЬ, ЛИФТ
+			</td>
+			<td>
+				%FLOOR%&nbsp;
+			</td>
+		</tr>
+	</table>
+
+	<h3><center>СПИСОК ИЗДЕЛИЙ</center></h3>
+
+	<table width="100%" border="1" cellspacing="0">
+		<tr>
+			<td align="center"><b>№</b></td>
+			<td align="center"><b>Наименование</b></td>
+			<td align="center"><b>Квадратура</b></td>
+				<td align="center"><b>Кол-во</b></td>
+		</tr>
+		<tr>
+			<td>%M_NUMBER%&nbsp;</td>
+			<td>%M_NAME%&nbsp;</td>
+			<td>%M_SQUARE%&nbsp;</td>
+			<td>%M_QUANTITY%&nbsp;</td>
+		</tr>
+	</table>
+
+	<h3><center>ДОПОЛНИТЕЛЬНЫЕ ИЗДЕЛИЯ</center></h3>
+
+	<table width="100%" border="1" cellspacing="0">
+		<tr>
+			<td align="center"><b>№</b></td>
+			<td align="center"><b>Наименование</b></td>
+			<td align="center"><b>Ответственный за заказ доп. изделия</b></td>
+			<td align="center"><b>Кол-во</b></td>
+		</tr>
+		<tr>
+			<td>%MA_NUMBER%&nbsp;</td>
+			<td>%MA_NAME%&nbsp;</td>
+			<td>%MA_MANAGER%&nbsp;</td>
+			<td>%MA_QUANTITY%&nbsp;</td>
+		</tr>
+	</table>
+
+</body>
+</html>
